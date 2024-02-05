@@ -1,0 +1,40 @@
+.about-section {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-img {
+  width: 44%;
+}
+.about-component {
+  width: 43%;
+}
+.about-component h2 {
+  margin: 19px 0px 19px;
+}
+.tab {
+  margin: 50px auto 30px;
+}
+.tablinks {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #555555;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-bottom: 1px solid #555555;
+  margin: 0px !important;
+}
+.active {
+  border: 1px solid #555555;
+  border-bottom: none;
+}
+.tabcontent {
+  display: none;
+  padding-right: 10px;
+}

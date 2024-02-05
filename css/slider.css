@@ -1,0 +1,23 @@
+.slider-img {
+  position: absolute;
+  right: 200px;
+  top: 0;
+  display: inline-block;
+}
+.hero-slider-left {
+  width: 60%;
+}
+.slider h1 {
+  color: #011a41;
+  font-family: "Open Sans";
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 96px;
+  margin: 25px auto;
+}
+.slider-arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}

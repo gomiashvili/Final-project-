@@ -1,0 +1,32 @@
+.overview {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #355efc;
+  padding: 30px;
+  margin: 0px -25px;
+}
+.overview > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.overview img {
+  width: 48px;
+  margin: auto;
+}
+.quantity {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px; /* 119.643% */
+}
+.overview > div p:last-of-type {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
