@@ -8,7 +8,26 @@
 .all-services {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
+}
+.planing-image {
+  width: 36px;
+  height: 24px;
+  background-image: url("../images/planing_icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services-tab > div:hover {
+  background-color: #355efc;
+  color: #fff;
+}
+.services-tab > div:hover .planing-image {
+  background-image: url("../images/planning-icon-hover.svg");
+  width: 36px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .services-tab {
   display: flex;
@@ -16,6 +35,7 @@
   gap: 40px;
 }
 .services-tab > div {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -58,3 +78,9 @@
 .tab-right button {
   width: 140px;
 }
+
+/* @media screen and (max-width: 1077px) {
+  .all-services {
+    flex-direction: column ;
+  }
+} */

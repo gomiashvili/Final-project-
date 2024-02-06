@@ -12,6 +12,7 @@ footer > div {
   flex-direction: column;
 }
 .footer-title {
+  margin-bottom: 8px;
   font-family: Jost;
   font-size: 24px;
   font-weight: 700;
@@ -25,8 +26,43 @@ footer p {
   content: url(../images/whiteArrow.png);
   display: inline-block;
   height: 16px;
+  margin-right: 4px;
+  vertical-align: middle !important;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .links p {
   display: flex;
   align-items: center;
+}
+.footer-form {
+  position: relative;
+}
+.footer-form input {
+  width: 100%;
+  padding: 15px 5px 15px 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.footer-form button {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  padding: 5px 5px 10px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #355efc;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.social-icons-footer {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
 }

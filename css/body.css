@@ -3,12 +3,18 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   width: 100%;
-  overflow-x: hidden;
-  background-image: url("/images/hero-shape.png");
+  /* overflow-x: hidden; */
+  background-image: url("../images/hero-shape.png");
   background-repeat: no-repeat;
 }
+a,
+button {
+  cursor: pointer;
+}
+
 p {
   color: #555;
   font-family: Poppins;
@@ -42,4 +48,11 @@ h3 {
 @font-face {
   font-family: Open Sans;
   src: url(../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+input[type="submit"] {
+  cursor: pointer !important;
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
 }

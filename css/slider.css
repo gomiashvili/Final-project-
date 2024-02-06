@@ -1,12 +1,39 @@
+.slider {
+  position: relative;
+  width: 100%;
+}
 .slider-img {
   position: absolute;
-  right: 200px;
-  top: 0;
-  display: inline-block;
+  right: 0px;
+  top: -60px;
+  z-index: 1;
+  display: none;
+}
+.slider-img img {
+  height: 520px;
 }
 .hero-slider-left {
   width: 60%;
 }
+.slider-arrow-left {
+  position: absolute;
+  left: -75px;
+  top: 135px;
+  cursor: pointer;
+  z-index: 3 !important;
+}
+.slider-arrow-right {
+  position: absolute;
+  right: -75px;
+  top: 135px;
+  cursor: pointer;
+  z-index: 3 !important;
+}
+.slider-arrow-right :hover,
+.slider-arrow-left :hover {
+  opacity: 0.9;
+}
+
 .slider h1 {
   color: #011a41;
   font-family: "Open Sans";
@@ -14,10 +41,83 @@
   font-weight: 700;
   line-height: 96px;
   margin: 25px auto;
+  z-index: 2 !important;
+  position: relative;
 }
 .slider-arrows {
-  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slider-arrows > div:last-child {
+  right: 0;
+}
+
+/* slider section */
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }

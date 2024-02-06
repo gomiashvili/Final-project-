@@ -18,11 +18,13 @@
     <link rel="stylesheet" href="css/why-us.css">
     <link rel="stylesheet" href="css/contact-form.css">
     <link rel="stylesheet" href="css/services-section.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper header-wrapper">
         <section class="info-header">
             <div class="location-active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -45,6 +47,9 @@
                     <span>+012 345 6789</span>
             </div>
         </section>
+    </div>
+      <div class="hr"></div>
+      <div class="wrapper">
         <header>
             <div class="header-logo">
                 <img src="images/Finanza.svg">
@@ -54,21 +59,31 @@
                     <a><li>Home</li></a>
                     <a><li>About</li></a>
                     <a><li>Services</li></a>
-                    <a><li>Pages<svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
-                        <path d="M7.13539 7.72701L1.18353 2.46079C0.772155 2.09681 0.772155 1.50823 1.18353 1.14811L2.17259 0.272991C2.58397 -0.0909971 3.24918 -0.0909971 3.65618 0.272991L7.875 4.00581L12.0938 0.272991C12.5052 -0.0909971 13.1704 -0.0909971 13.5774 0.272991L14.5665 1.14811C14.9778 1.5121 14.9778 2.10068 14.5665 2.46079L8.61461 7.72701C8.21198 8.091 7.54677 8.091 7.13539 7.72701Z" fill="#355EFC"/>
-                      </svg></li></a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Pages 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                <path d="M7.13539 7.72701L1.18353 2.46079C0.772155 2.09681 0.772155 1.50823 1.18353 1.14811L2.17259 0.272991C2.58397 -0.0909971 3.24918 -0.0909971 3.65618 0.272991L7.875 4.00581L12.0938 0.272991C12.5052 -0.0909971 13.1704 -0.0909971 13.5774 0.272991L14.5665 1.14811C14.9778 1.5121 14.9778 2.10068 14.5665 2.46079L8.61461 7.72701C8.21198 8.091 7.54677 8.091 7.13539 7.72701Z" fill="#355EFC"/>
+                              </svg>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#about">About Us</a>
+                          <a href="#why">Why Choosing Us!</a>
+                          <a href="#serv">Our services</a>
+                          <a href="#git">Get in Touch</a>
+                        </div>
+                      </div> 
                     <a><li>Contact</li></a>
                 </ul>
             </nav>
             <div class="social-icons">
                 <div>
-                    <img src="images/icon1.svg">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icon1.svg"></a>
                 </div>
                 <div>
-                    <img src="images/icon2.svg">
+                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/icon2.svg"></a>
                 </div>
                 <div>
-                    <img src="images/icon3.svg">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/icon3.svg"></a>
                 </div>
             </div>
         </header>
@@ -76,21 +91,37 @@
             <div class="hero-slider-left">
                 <button class="white-btn">Welcome to Finanza</button>
                 <h1>Your Financial Status Is Our Goal</h1>
-                <button class="more">Explore more</button>
+                <button  onclick="openModal(0)" class="more">Explore more</button>
+                
             </div>
-            <div class="slider-img">
+            <div class="slider-img fade">
+                <img src="images/business-meeting-2.png">
+            </div>
+            <div class="slider-img fade">
+                <img src="images/business-meeting-3.png">
+            </div>
+
+            <div class="slider-img fade">
                 <img src="images/slider-image-card.svg">
             </div>
-            <div class="slider-arrows">
+       
+         
+
+            <!-- <div class="slider-arrow-left" onclick="plusSlides(-1)">   <img src="images/slider-button-left.svg"></div>
+            <div class="slider-arrow-right"onclick="plusSlides(1)">   <img src="images/slider-button-right.svg"></div> -->
+
+            <!-- <div class="slider-arrows">
                 <div>
-                    <img src="images/slider-button-left.svg">
+                 
                 </div>
                 <div>
-                    <img src="images/slider-button-right.svg">
+                 
                 </div>
-            </div>
+            </div> -->
+            <script src="./js/slider.js"></script>
+
         </section>
-        <section class="about-section">
+        <section id="about" class="about-section">
             <div class="about-img">
              <img src="images/image card.svg"> 
             </div>
@@ -169,82 +200,94 @@
         </section>
     </div>
         <section class="overview">
-            <div>
-                <img src="images/clients-icon.svg">
-                <p class="quantity">1234</p>
-                <p>Happy Clients</p>
-                <div class="line"></div>
+            <div class="wrapper overview-wrapper">
+                <div>
+                    <img src="images/clients-icon.svg">
+                    <p class="quantity">1234</p>
+                    <p>Happy Clients</p>
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <img src="images/tick-icon.svg">
+                    <p class="quantity">1234</p>
+                    <p>Projects Completed</p>
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <img src="images/staff1.svg">
+                    <p class="quantity">1234</p>
+                    <p>Dedicated Staff</p>
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <img src="images/staff2.svg">
+                    <p class="quantity">1234</p>
+                    <p>Dedicated Staff</p>
+                    <div class="line"></div>
+                </div>
             </div>
-            <div>
-                <img src="images/tick-icon.svg">
-                <p class="quantity">1234</p>
-                <p>Projects Completed</p>
-                <div class="line"></div>
-            </div>
-            <div>
-                <img src="images/staff1.svg">
-                <p class="quantity">1234</p>
-                <p>Dedicated Staff</p>
-                <div class="line"></div>
-            </div>
-            <div>
-                <img src="images/staff2.svg">
-                <p class="quantity">1234</p>
-                <p>Dedicated Staff</p>
-                <div class="line"></div>
-            </div>
+          
+
+
         </section>
     <div class="wrapper">
-        <section class="why-us">
+        <section id="why" class="why-us">
             <div class="why-us-left-box">
                 <button>Why Choosing Us!</button>
                 <h2>Few Reasons Why People Choosing Us!</h2>
                 <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, 
                     sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <button class="more">explore more</button>
+                <button  onclick="openModal(1)" class="more">explore more</button>
             </div>
             <div class="why-us-right-box">
-                <div>
-                    <img src="images/tick-icon.svg">
+                <div onmouseover="onmouseOver(0)" onmouseleave="onmouseLeave(0)">
+                    <img class="tick-img" src="./images/blue-tick.svg">
                     <p class="title">Fast Executions</p>
                     <p>Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
-                    <button>Read more<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" viewBox="0 0 17 18" fill="none">
-                        <path d="M0 7.95312H12.7405L6.88844 2.10109L8.375 0.625L16.75 9L8.375 17.375L6.89891 15.8989L12.7405 10.0469H0V7.95312Z" fill="#355EFC"/>
-                      </svg></button>
+                    <button  class="arrow-img">Read more
+                        <img class="arrow-back" src="./images/icon_arrow_back_blue.svg">
+                    </button>
                 </div>
-                <div>
-                    <img src="images/tick-icon.svg">
+                <div onmouseover="onmouseOver(1)" onmouseleave="onmouseLeave(1)">
+                    <img class="tick-img" src="./images/blue-tick.svg">
                     <p class="title">Fast Executions</p>
                     <p>Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
-                    <button>Read more<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" viewBox="0 0 17 18" fill="none">
-                        <path d="M0 7.95312H12.7405L6.88844 2.10109L8.375 0.625L16.75 9L8.375 17.375L6.89891 15.8989L12.7405 10.0469H0V7.95312Z" fill="#355EFC"/>
-                      </svg></button>
+                    <button class="arrow-img">Read more <img class="arrow-back" src="./images/icon_arrow_back_blue.svg"></button>
                 </div>
-                <div>
-                    <img src="images/tick-icon.svg">
+                <div onmouseover="onmouseOver(2)" onmouseleave="onmouseLeave(2)">
+                    <img class="tick-img" src="./images/blue-tick.svg">
                     <p class="title">Fast Executions</p>
                     <p>Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
-                    <button>Read more<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" viewBox="0 0 17 18" fill="none">
-                        <path d="M0 7.95312H12.7405L6.88844 2.10109L8.375 0.625L16.75 9L8.375 17.375L6.89891 15.8989L12.7405 10.0469H0V7.95312Z" fill="#355EFC"/>
-                      </svg></button>
+                    <button class="arrow-img">Read more <img class="arrow-back" src="./images/icon_arrow_back_blue.svg"></button>
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="serv" class="services">
             <button class="white-btn">Our Services</button>
             <h2>Awesome Financial Services For Business</h2>
             <div class="all-services">
                 <div class="services-tab">
                     <div>
-                        <img src="images/planing_icon.svg">
+                        <div class="planing-image">
+                        </div>
                         <h5>Financial Planing</h5>
                     </div>
-                    <div><img src="images/planing_icon.svg">
-                        <h5>Financial Planing</h5></div>
-                    <div><img src="images/planing_icon.svg">
-                        <h5>Financial Planing</h5></div>
-                    <div><img src="images/planing_icon.svg">
-                        <h5>Financial Planing</h5></div>
+                    <div>
+                        <div class="planing-image">
+                        </div>
+                        <h5>Financial Planing</h5>
+                    </div>
+                    <div>
+                        <div class="planing-image">
+                        </div>
+                        <h5>Financial Planing</h5>
+                    </div>
+                    <div>
+                        <div class="planing-image">
+                            <!-- <img class="planing" src="images/planing_icon.svg"> -->
+                        </div>
+                        <h5>Financial Planing</h5>
+                    </div>
                 </div>
                 <div class="services-img">
                     <img src="images/tab-image.svg">
@@ -269,27 +312,30 @@
                               </svg><span> Cash Advanced</span>
                         </li>
                     </ul>
-                    <button class="more">Read More</button>
+                    <button onclick="openModal(2)"  class="more">Read More</button>
                 </div>
             </div>
         </section>
+        <script src="./js/hover.js"></script>
     </div>
-        <section class="contact-form">
+        <section id="git" class="contact-form">
+            <div class="background"></div>
             <div class="form-container">
                 <button class="white-btn">Get in Touch</button>
                 <h2>Request A Call-Back</h2>
-                <form>
+                <form name="call-back" onsubmit="return validateForm()">
                     <fieldset>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="fname" placeholder="Your Name">
+                    <input  id="email" placeholder="Your Email">
                 </fieldset>
                 <fieldset>
-                    <input type="tel" id="tel" placeholder="Your Phone" pattern="^\+995\d{6}$" required>
-                    <input type="text" id="subject" placeholder="Your Subject" minlength="5" required>
+                    <input type="tel" id="tel" placeholder="Your Phone">
+                    <input type="text" id="subject" placeholder="Your Subject">
                 </fieldset>
-                    <textarea placeholder="Message:"></textarea>
-                    <input type="submit" class="submit-btn" value="submit Now">
-                    <script src="./js/validation.js"></script>
+                <textarea placeholder="Message:"></textarea>
+                <input type="submit" class="submit-btn" value="submit Now">
+                <!-- <div onclick="validateForm()">Submit now</div> -->
+                <!-- <input onclick="submit()" type="submit" class="submit-btn" value="submit Now"> -->
                 </form>
             </div>
         </section>
@@ -308,15 +354,15 @@
                     <path d="M11.6667 3.16687H2.33335C1.69169 3.16687 1.17252 3.87937 1.17252 4.7502L1.16669 14.2502C1.16669 15.121 1.69169 15.8335 2.33335 15.8335H11.6667C12.3084 15.8335 12.8334 15.121 12.8334 14.2502V4.7502C12.8334 3.87937 12.3084 3.16687 11.6667 3.16687ZM11.4334 6.53145L7.30919 10.0306C7.12252 10.189 6.87752 10.189 6.69085 10.0306L2.56669 6.53145C2.42085 6.40479 2.33335 6.19104 2.33335 5.96145C2.33335 5.43104 2.75919 5.11437 3.09169 5.39145L7.00002 8.70854L10.9084 5.39145C11.2409 5.11437 11.6667 5.43104 11.6667 5.96145C11.6667 6.19104 11.5792 6.40479 11.4334 6.53145Z" fill="#355EFC"/>
                   </svg>
                   <span>info@example.com</span></p>
-                  <div class="social-icons">
+                  <div class="social-icons-footer">
                     <div>
-                        <img src="images/icon1.svg">
+                        <img src="images/footer-icon1.svg">
                     </div>
                     <div>
-                        <img src="images/icon2.svg">
+                        <img src="images/footer-icon2.svg">
                     </div>
                     <div>
-                        <img src="images/icon3.svg">
+                        <img src="images/footer-icon3.svg">
                     </div>
                     <div>
                         <img src="images/icon4.svg">
@@ -342,9 +388,9 @@
             <div>
                 <h4 class="footer-title">Newsletter</h4>
                 <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <form>
+                <form class="footer-form">
                     <input type="email" placeholder="Your Email">
-                    <input type="submit" value="signUp">
+                    <button>signUp</button>
                 </form>
             </div>
         </footer>
@@ -352,6 +398,18 @@
             <p>© Your Site Name, All Right Reserved.</p>
             <p>Redesigned By saikat mondal  and Designed By HTML Codex</p>
         </section>
+        <script src="./js/validation.js"></script>
     
+
+        <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span onclick="closeModal()" class="close">&times;</span>
+              <p id="in_text"></p>
+            </div>
+          
+          </div> 
+          <script src="./js/modal.js"></script>
+
 </body>
 </html>

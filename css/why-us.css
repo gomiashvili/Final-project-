@@ -1,6 +1,7 @@
 .why-us {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap !important;
 }
 .why-us-left-box {
   width: 39%;
@@ -25,6 +26,34 @@
   border-radius: 15px;
   border: 1px solid #909de2;
 }
+.arrow-back {
+  width: 17px;
+  height: 17px;
+}
+.tick-img {
+  /* background: url("../images/blue-tick.svg");
+  ackground-repeat: no-repeat;
+  bbackground-size: cover; */
+  width: 45px;
+  height: 40px;
+}
+.why-us-right-box > div:hover {
+  background-color: #355efc;
+}
+.why-us-right-box > div:hover p {
+  color: #fff;
+}
+.why-us-right-box > div:hover button {
+  background-color: #355efc;
+  color: #fff;
+}
+/* .why-us-right-box > div:hover .tick-img {
+  background: url("../images/tick-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45px;
+  height: 40px;
+} */
 .why-us-right-box img {
   width: 43px;
 }
@@ -55,4 +84,11 @@
 }
 .why-us-left-box > p {
   margin: 20px 0px 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .why-us-right-box {
+    height: 950px;
+    width: 24%;
+  }
 }

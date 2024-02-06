@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .about-img {
-  width: 44%;
+  min-width: 44%;
 }
 .about-component {
   width: 43%;
@@ -28,7 +29,7 @@
   background-color: #fff;
   padding: 5px 10px;
   border-bottom: 1px solid #555555;
-  margin: 0px !important;
+  margin-left: -4px !important;
 }
 .active {
   border: 1px solid #555555;
@@ -37,4 +38,10 @@
 .tabcontent {
   display: none;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about-section {
+    justify-content: center;
+  }
 }
