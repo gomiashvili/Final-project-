@@ -2,7 +2,6 @@ var menuLinks = document.getElementsByClassName("sidenav");
 for (var i = 0; i < menuLinks.length; i++) {
   menuLinks[i].addEventListener("click", function (event) {
     closeNav();
-    //   event.preventDefault();
   });
 }
 

@@ -1,431 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finanza</title>
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/wrapper.css">
-    <link rel="stylesheet" href="css/info-header.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/about-section.css">
-    <link rel="stylesheet" href="css/site-info.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/services-short.css">
-    <link rel="stylesheet" href="css/overview.css">
-    <link rel="stylesheet" href="css/why-us.css">
-    <link rel="stylesheet" href="css/contact-form.css">
-    <link rel="stylesheet" href="css/services-section.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/animations.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finanza</title>
+  <link rel="stylesheet" href="css/body.css" />
+  <link rel="stylesheet" href="css/wrapper.css" />
+  <link rel="stylesheet" href="css/info-header.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/buttons.css" />
+  <link rel="stylesheet" href="css/about-section.css" />
+  <link rel="stylesheet" href="css/site-info.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/services-short.css" />
+  <link rel="stylesheet" href="css/overview.css" />
+  <link rel="stylesheet" href="css/why-us.css" />
+  <link rel="stylesheet" href="css/contact-form.css" />
+  <link rel="stylesheet" href="css/services-section.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/animations.css" />
 </head>
+
 <body>
-    <div class="wrapper header-wrapper">
-        <section class="info-header">
-            <div class="location-active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M7 0C3.13 0 0 2.191 0 4.9C0 8.575 7 14 7 14C7 14 14 8.575 14 4.9C14 2.191 10.87 0 7 0ZM7 6.65C5.62 6.65 4.5 5.866 4.5 4.9C4.5 3.934 5.62 3.15 7 3.15C8.38 3.15 9.5 3.934 9.5 4.9C9.5 5.866 8.38 6.65 7 6.65Z" fill="#355EFC"/>
-                    </svg>
-                    <span>123 Street, New York, USA</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M7 0C3.13306 0 0 3.13306 0 7C0 10.8669 3.13306 14 7 14C10.8669 14 14 10.8669 14 7C14 3.13306 10.8669 0 7 0ZM8.61169 9.88186L6.12218 8.07258C6.03468 8.00766 5.98387 7.90605 5.98387 7.79879V3.04839C5.98387 2.8621 6.13629 2.70968 6.32258 2.70968H7.67742C7.86371 2.70968 8.01613 2.8621 8.01613 3.04839V6.93508L9.80847 8.23911C9.96089 8.34919 9.99194 8.56089 9.88186 8.71331L9.08589 9.80847C8.97581 9.95806 8.76411 9.99194 8.61169 9.88186Z" fill="#355EFC"/>
-                    </svg>
-                <span>9.00 am - 9.00 pm</span>
-            </div>
-            <div class="info">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="19" viewBox="0 0 14 19" fill="none">
-                        <path d="M11.6667 3.16687H2.33335C1.69169 3.16687 1.17252 3.87937 1.17252 4.7502L1.16669 14.2502C1.16669 15.121 1.69169 15.8335 2.33335 15.8335H11.6667C12.3084 15.8335 12.8334 15.121 12.8334 14.2502V4.7502C12.8334 3.87937 12.3084 3.16687 11.6667 3.16687ZM11.4334 6.53145L7.30919 10.0306C7.12252 10.189 6.87752 10.189 6.69085 10.0306L2.56669 6.53145C2.42085 6.40479 2.33335 6.19104 2.33335 5.96145C2.33335 5.43104 2.75919 5.11437 3.09169 5.39145L7.00002 8.70854L10.9084 5.39145C11.2409 5.11437 11.6667 5.43104 11.6667 5.96145C11.6667 6.19104 11.5792 6.40479 11.4334 6.53145Z" fill="#355EFC"/>
-                    </svg>
-                    <span>info@example.com</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                        <path d="M14.1007 9.8929L11.0382 8.58037C10.9074 8.52462 10.762 8.51287 10.6239 8.5469C10.4858 8.58092 10.3625 8.65889 10.2726 8.76905L8.91628 10.4261C6.78773 9.42252 5.07474 7.70953 4.07116 5.58098L5.72822 4.22471C5.8386 4.13493 5.91673 4.01164 5.95077 3.87349C5.98481 3.73534 5.97292 3.58986 5.91689 3.45907L4.60437 0.396517C4.54287 0.255532 4.43411 0.140423 4.29684 0.0710381C4.15957 0.001653 4.00239 -0.017659 3.8524 0.016432L1.0086 0.672694C0.863998 0.706086 0.734981 0.787506 0.64261 0.903666C0.550238 1.01983 0.499967 1.16387 0.5 1.31228C0.5 8.32607 6.18486 14 13.1877 14C13.3362 14.0001 13.4803 13.9499 13.5965 13.8575C13.7127 13.7651 13.7942 13.636 13.8276 13.4914L14.4838 10.6476C14.5177 10.4969 14.498 10.3391 14.4281 10.2013C14.3581 10.0636 14.2424 9.95451 14.1007 9.8929Z" fill="#355EFC"/>
-                    </svg>
-                    <span>+012 345 6789</span>
-            </div>
-        </section>
-    </div>
-      <div class="hr"></div>
-      <div class="wrapper full-width-wrapper">
-        <header>
-            <div class="header-logo">
-                <img src="images/Finanza.svg">
-            </div>
-        
-            <nav >
-                <ul class="header-menu">
-                    <a><li>Home</li></a>
-                    <a><li>About</li></a>
-                    <a><li>Services</li></a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Pages 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
-                                <path d="M7.13539 7.72701L1.18353 2.46079C0.772155 2.09681 0.772155 1.50823 1.18353 1.14811L2.17259 0.272991C2.58397 -0.0909971 3.24918 -0.0909971 3.65618 0.272991L7.875 4.00581L12.0938 0.272991C12.5052 -0.0909971 13.1704 -0.0909971 13.5774 0.272991L14.5665 1.14811C14.9778 1.5121 14.9778 2.10068 14.5665 2.46079L8.61461 7.72701C8.21198 8.091 7.54677 8.091 7.13539 7.72701Z" fill="#355EFC"/>
-                              </svg>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#about">About Us</a>
-                          <a href="#why">Why Choosing Us!</a>
-                          <a href="#serv">Our services</a>
-                          <a href="#git">Get in Touch</a>
-                        </div>
-                      </div> 
-                    <a><li>Contact</li></a>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <div>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icon1.svg"></a>
-                </div>
-                <div>
-                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/icon2.svg"></a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/icon3.svg"></a>
-                </div>
-            </div>
-            <div onclick="openNav()" class="burger-menu">
-                <div class="planing-image">
-                </div>
-            </div>
-        </header>
-    </div>
-    <div class="wrapper">
-        <section class="slider">
-            <div class="hero-slider-left">
-                <button class="white-btn">Welcome to Finanza</button>
-                <h1>Your Financial Status Is Our Goal</h1>
-                <button  onclick="openModal(0)" class="more">Explore more</button>
-                
-            </div>
-            <div class="slider-img fade">
-                <img src="images/business-meeting-2.png">
-            </div>
-            <div class="slider-img fade">
-                <img src="images/business-meeting-3.png">
-            </div>
+  <div class="wrapper header-wrapper">
+    <section class="info-header">
+      <div class="location-active">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path
+            d="M7 0C3.13 0 0 2.191 0 4.9C0 8.575 7 14 7 14C7 14 14 8.575 14 4.9C14 2.191 10.87 0 7 0ZM7 6.65C5.62 6.65 4.5 5.866 4.5 4.9C4.5 3.934 5.62 3.15 7 3.15C8.38 3.15 9.5 3.934 9.5 4.9C9.5 5.866 8.38 6.65 7 6.65Z"
+            fill="#355EFC" />
+        </svg>
+        <span>123 Street, New York, USA</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path
+            d="M7 0C3.13306 0 0 3.13306 0 7C0 10.8669 3.13306 14 7 14C10.8669 14 14 10.8669 14 7C14 3.13306 10.8669 0 7 0ZM8.61169 9.88186L6.12218 8.07258C6.03468 8.00766 5.98387 7.90605 5.98387 7.79879V3.04839C5.98387 2.8621 6.13629 2.70968 6.32258 2.70968H7.67742C7.86371 2.70968 8.01613 2.8621 8.01613 3.04839V6.93508L9.80847 8.23911C9.96089 8.34919 9.99194 8.56089 9.88186 8.71331L9.08589 9.80847C8.97581 9.95806 8.76411 9.99194 8.61169 9.88186Z"
+            fill="#355EFC" />
+        </svg>
+        <span>9.00 am - 9.00 pm</span>
+      </div>
+      <div class="info">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="19" viewBox="0 0 14 19" fill="none">
+          <path
+            d="M11.6667 3.16687H2.33335C1.69169 3.16687 1.17252 3.87937 1.17252 4.7502L1.16669 14.2502C1.16669 15.121 1.69169 15.8335 2.33335 15.8335H11.6667C12.3084 15.8335 12.8334 15.121 12.8334 14.2502V4.7502C12.8334 3.87937 12.3084 3.16687 11.6667 3.16687ZM11.4334 6.53145L7.30919 10.0306C7.12252 10.189 6.87752 10.189 6.69085 10.0306L2.56669 6.53145C2.42085 6.40479 2.33335 6.19104 2.33335 5.96145C2.33335 5.43104 2.75919 5.11437 3.09169 5.39145L7.00002 8.70854L10.9084 5.39145C11.2409 5.11437 11.6667 5.43104 11.6667 5.96145C11.6667 6.19104 11.5792 6.40479 11.4334 6.53145Z"
+            fill="#355EFC" />
+        </svg>
+        <span>info@example.com</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+          <path
+            d="M14.1007 9.8929L11.0382 8.58037C10.9074 8.52462 10.762 8.51287 10.6239 8.5469C10.4858 8.58092 10.3625 8.65889 10.2726 8.76905L8.91628 10.4261C6.78773 9.42252 5.07474 7.70953 4.07116 5.58098L5.72822 4.22471C5.8386 4.13493 5.91673 4.01164 5.95077 3.87349C5.98481 3.73534 5.97292 3.58986 5.91689 3.45907L4.60437 0.396517C4.54287 0.255532 4.43411 0.140423 4.29684 0.0710381C4.15957 0.001653 4.00239 -0.017659 3.8524 0.016432L1.0086 0.672694C0.863998 0.706086 0.734981 0.787506 0.64261 0.903666C0.550238 1.01983 0.499967 1.16387 0.5 1.31228C0.5 8.32607 6.18486 14 13.1877 14C13.3362 14.0001 13.4803 13.9499 13.5965 13.8575C13.7127 13.7651 13.7942 13.636 13.8276 13.4914L14.4838 10.6476C14.5177 10.4969 14.498 10.3391 14.4281 10.2013C14.3581 10.0636 14.2424 9.95451 14.1007 9.8929Z"
+            fill="#355EFC" />
+        </svg>
+        <span>+012 345 6789</span>
+      </div>
+    </section>
+  </div>
+  <div class="hr"></div>
+  <div class="wrapper full-width-wrapper">
+    <header>
+      <div class="header-logo">
+        <img src="images/Finanza.svg" />
+      </div>
 
-            <div class="slider-img fade">
-                <img src="images/slider-image-card.svg">
+      <nav>
+        <ul class="header-menu">
+          <a>
+            <li>Home</li>
+          </a>
+          <a>
+            <li>About</li>
+          </a>
+          <a>
+            <li>Services</li>
+          </a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Pages
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                <path
+                  d="M7.13539 7.72701L1.18353 2.46079C0.772155 2.09681 0.772155 1.50823 1.18353 1.14811L2.17259 0.272991C2.58397 -0.0909971 3.24918 -0.0909971 3.65618 0.272991L7.875 4.00581L12.0938 0.272991C12.5052 -0.0909971 13.1704 -0.0909971 13.5774 0.272991L14.5665 1.14811C14.9778 1.5121 14.9778 2.10068 14.5665 2.46079L8.61461 7.72701C8.21198 8.091 7.54677 8.091 7.13539 7.72701Z"
+                  fill="#355EFC" />
+              </svg>
+            </button>
+            <div class="dropdown-content">
+              <a href="#about">About Us</a>
+              <a href="#why">Why Choosing Us!</a>
+              <a href="#serv">Our services</a>
+              <a href="#git">Get in Touch</a>
             </div>
-       
-         
-
-                <div class="slider-arrow-left" onclick="plusSlides(-1)">   <img src="images/slider-button-left.svg"></div>
-                <div class="slider-arrow-right"onclick="plusSlides(1)">   <img src="images/slider-button-right.svg"></div>
-
-            <!-- <div class="slider-arrows">
-                <div>
-                 
-                </div>
-                <div>
-                 
-                </div>
-            </div> -->
-            <script src="./js/slider.js"></script>
-            <script src = "./js/mobile_menu.js"></script>
-
-        </section>
-        <section id="about" class="about-section">
-            <div class="about-img">
-             <img src="images/image card.svg"> 
-            </div>
-            <div class="about-component">
-                <div class="about-text-box">
-                    <button class="white-btn">About us</button>
-                    <h2>We Help Our Clients To Grow Their Business</h2>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                         sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                </div>
-                <div class="about-tab-box">
-                    <div class="tab">
-                        <button class="tablinks" onclick="openTab('btn1','tab1')" id="btn1">Story</button>
-                        <button class="tablinks" onclick="openTab('btn2','tab2')" id="btn2">Mission</button>
-                        <button class="tablinks" onclick="openTab('btn3','tab3')" id="btn3">Vission</button>
-                      </div>
-                      
-                      <div id="tab1" class="tabcontent">
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit.Aliqu diam amet diam et eos labore. 
-
-                            Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
-                      </div>
-                      
-                      <div id="tab2" class="tabcontent">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ex vitae, commodi, quo nostrum beatae 
-                            magnam ipsam expedita quibusdam reprehenderit aliquid adipisci eos accusamus praesentium nam iusto at porro molestiae.</p>
-                      </div>
-                      
-                      <div id="tab3" class="tabcontent">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac tortor eget
-                             nisl volutpat fringilla. Etiam eleifend rhoncus posuere. Praesent vitae est neque. Aenean consectetur libero vitae accumsan
-                              varius.
-                        </p>
-                      </div>
-                </div>
-                <script src="./js/tabs.js"></script>
-            </div>
-        </section>
-        <section class="services-short">
-            <div>
-                <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                        <circle cx="24" cy="24" r="24" fill="#355EFC"/>
-                        <path d="M35.5242 12.552C34.8126 11.8403 33.6631 11.8403 32.9515 12.552L24.029 21.4562L15.1065 12.5337C14.3948 11.8221 13.2453 11.8221 12.5337 12.5337C11.8221 13.2453 11.8221 14.3948 12.5337 15.1065L21.4562 24.029L12.5337 32.9515C11.8221 33.6631 11.8221 34.8126 12.5337 35.5242C13.2453 36.2358 14.3948 36.2358 15.1065 35.5242L24.029 26.6017L32.9515 35.5242C33.6631 36.2358 34.8126 36.2358 35.5242 35.5242C36.2358 34.8126 36.2358 33.6631 35.5242 32.9515L26.6017 24.029L35.5242 15.1065C36.2176 14.4131 36.2176 13.2453 35.5242 12.552Z" fill="#F5F5F5"/>
-                      </svg>
-                </div>
-                <div class="services-text">
-                    <p class="service-heading">No Hidden Cost</p>
-                    <p>Clita erat ipsum lorem sit sed stet duo justo</p>
-                </div>
-            </div>
-            <div>
-                <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
-                        <circle cx="24.5" cy="24" r="24" fill="#355EFC"/>
-                        <path d="M29.5043 22.2857C31.7181 22.2857 33.4919 19.9886 33.4919 17.1429C33.4919 14.2971 31.7181 12 29.5043 12C27.2905 12 25.5035 14.2971 25.5035 17.1429C25.5035 19.9886 27.2905 22.2857 29.5043 22.2857ZM18.8354 22.2857C21.0492 22.2857 22.8229 19.9886 22.8229 17.1429C22.8229 14.2971 21.0492 12 18.8354 12C16.6215 12 14.8345 14.2971 14.8345 17.1429C14.8345 19.9886 16.6215 22.2857 18.8354 22.2857ZM18.8354 25.7143C15.728 25.7143 9.5 27.72 9.5 31.7143V34.2857C9.5 35.2286 10.1001 36 10.8336 36H26.8371C27.5706 36 28.1707 35.2286 28.1707 34.2857V31.7143C28.1707 27.72 21.9427 25.7143 18.8354 25.7143ZM29.5043 25.7143C29.1176 25.7143 28.6775 25.7486 28.2107 25.8C28.2374 25.8171 28.2507 25.8514 28.2641 25.8686C29.7844 27.2914 30.838 29.1943 30.838 31.7143V34.2857C30.838 34.8857 30.7446 35.4686 30.5979 36H37.5061C38.2396 36 38.8397 35.2286 38.8397 34.2857V31.7143C38.8397 27.72 32.6117 25.7143 29.5043 25.7143Z" fill="white"/>
-                      </svg>
-                </div>
-                <div class="services-text">
-                    <p class="service-heading">Dedicated Team</p>
-                    <p>Clita erat ipsum lorem sit sed stet duo justo</p>
-                </div>
-            </div>
-            <div>
-                <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
-                        <circle cx="24.5" cy="24" r="24" fill="#355EFC"/>
-                        <path d="M34.1485 28.3664L30.755 27.9789C29.94 27.8854 29.1384 28.166 28.5639 28.7404L26.1056 31.1987C22.3247 29.2749 19.2251 26.1886 17.3012 22.3943L19.7729 19.9227C20.3474 19.3482 20.6279 18.5465 20.5344 17.7316L20.147 14.3648C19.9866 13.0154 18.851 12 17.4883 12H15.177C13.6672 12 12.4114 13.2559 12.5049 14.7656C13.213 26.1753 22.338 35.287 33.7343 35.9951C35.244 36.0886 36.4999 34.8327 36.4999 33.323V31.0117C36.5132 29.6623 35.4979 28.5267 34.1485 28.3664Z" fill="white"/>
-                      </svg>
-                </div>
-                <div class="services-text">
-                    <p class="service-heading">24/7 Available</p>
-                    <p>Clita erat ipsum lorem sit sed stet duo justo</p>
-                </div>
-            </div>
-        </section>
-    </div>
-        <section class="overview">
-            <div class="wrapper overview-wrapper">
-                <div>
-                    <img src="images/clients-icon.svg">
-                    <p class="quantity">1234</p>
-                    <p>Happy Clients</p>
-                    <div class="line"></div>
-                </div>
-                <div>
-                    <img src="images/tick-icon.svg">
-                    <p class="quantity">1234</p>
-                    <p>Projects Completed</p>
-                    <div class="line"></div>
-                </div>
-                <div>
-                    <img src="images/staff1.svg">
-                    <p class="quantity">1234</p>
-                    <p>Dedicated Staff</p>
-                    <div class="line"></div>
-                </div>
-                <div>
-                    <img src="images/staff2.svg">
-                    <p class="quantity">1234</p>
-                    <p>Dedicated Staff</p>
-                    <div class="line"></div>
-                </div>
-            </div>
-          
-
-
-        </section>
-    <div class="wrapper">
-        <section id="why" class="why-us">
-            <div class="why-us-left-box">
-                <button>Why Choosing Us!</button>
-                <h2>Few Reasons Why People Choosing Us!</h2>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, 
-                    sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <button  onclick="openModal(1)" class="more">explore more</button>
-            </div>
-            <div class="why-us-right-box">
-                <div onmouseover="onmouseOver(0)" onmouseleave="onmouseLeave(0)">
-                    <img class="tick-img" src="./images/blue-tick.svg">
-                    <p class="title">Fast Executions</p>
-                    <p>Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
-                    <button  class="arrow-img">Read more
-                        <img class="arrow-back" src="./images/icon_arrow_back_blue.svg">
-                    </button>
-                </div>
-                <div onmouseover="onmouseOver(1)" onmouseleave="onmouseLeave(1)">
-                    <img class="tick-img" src="./images/blue-tick.svg">
-                    <p class="title">Fast Executions</p>
-                    <p>Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
-                    <button class="arrow-img">Read more <img class="arrow-back" src="./images/icon_arrow_back_blue.svg"></button>
-                </div>
-                <div onmouseover="onmouseOver(2)" onmouseleave="onmouseLeave(2)">
-                    <img class="tick-img" src="./images/blue-tick.svg">
-                    <p class="title">Fast Executions</p>
-                    <p>Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo erat amet</p>
-                    <button class="arrow-img">Read more <img class="arrow-back" src="./images/icon_arrow_back_blue.svg"></button>
-                </div>
-            </div>
-        </section>
-        <section id="serv" class="services">
-            <button class="white-btn">Our Services</button>
-            <h2>Awesome Financial Services For Business</h2>
-            <div class="all-services">
-                <div class="services-tab">
-                    <div>
-                        <div class="planing-image">
-                        </div>
-                        <h5>Financial Planing</h5>
-                    </div>
-                    <div>
-                        <div class="planing-image">
-                        </div>
-                        <h5>Financial Planing</h5>
-                    </div>
-                    <div>
-                        <div class="planing-image">
-                        </div>
-                        <h5>Financial Planing</h5>
-                    </div>
-                    <div>
-                        <div class="planing-image">
-                            <!-- <img class="planing" src="images/planing_icon.svg"> -->
-                        </div>
-                        <h5>Financial Planing</h5>
-                    </div>
-                </div>
-                <div class="services-img">
-                    <img src="images/tab-image.svg">
-                </div>
-                <div class="tab-right">
-                    <h3>25 Years Of Experience In Financial Support</h3>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                         sed stet </p>
-                    <ul class="tab-right-ul">
-                        <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
-                            <path d="M8.4911 18.2766L0.366101 10.1516C-0.122034 9.66351 -0.122034 8.87206 0.366101 8.38387L2.13383 6.6161C2.62196 6.12792 3.41346 6.12792 3.9016 6.6161L9.37499 12.0894L21.0984 0.366101C21.5865 -0.122034 22.378 -0.122034 22.8662 0.366101L24.6339 2.13387C25.122 2.62201 25.122 3.41346 24.6339 3.90165L10.2589 18.2767C9.77069 18.7648 8.97924 18.7648 8.4911 18.2766Z" fill="#355EFC"/>
-                          </svg><span> Secured Loans</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
-                                <path d="M8.4911 18.2766L0.366101 10.1516C-0.122034 9.66351 -0.122034 8.87206 0.366101 8.38387L2.13383 6.6161C2.62196 6.12792 3.41346 6.12792 3.9016 6.6161L9.37499 12.0894L21.0984 0.366101C21.5865 -0.122034 22.378 -0.122034 22.8662 0.366101L24.6339 2.13387C25.122 2.62201 25.122 3.41346 24.6339 3.90165L10.2589 18.2767C9.77069 18.7648 8.97924 18.7648 8.4911 18.2766Z" fill="#355EFC"/>
-                              </svg><span> Credit Facilities</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
-                                <path d="M8.4911 18.2766L0.366101 10.1516C-0.122034 9.66351 -0.122034 8.87206 0.366101 8.38387L2.13383 6.6161C2.62196 6.12792 3.41346 6.12792 3.9016 6.6161L9.37499 12.0894L21.0984 0.366101C21.5865 -0.122034 22.378 -0.122034 22.8662 0.366101L24.6339 2.13387C25.122 2.62201 25.122 3.41346 24.6339 3.90165L10.2589 18.2767C9.77069 18.7648 8.97924 18.7648 8.4911 18.2766Z" fill="#355EFC"/>
-                              </svg><span> Cash Advanced</span>
-                        </li>
-                    </ul>
-                    <button onclick="openModal(2)"  class="more">Read More</button>
-                </div>
-            </div>
-        </section>
-        <script src="./js/hover.js"></script>
-    </div>
-        <section id="git" class="contact-form">
-            <div class="background"></div>
-            <div class="form-container">
-                <button class="white-btn">Get in Touch</button>
-                <h2>Request A Call-Back</h2>
-                <form name="call-back" onsubmit="return validateForm()">
-                    <fieldset>
-                    <input type="text" id="fname" placeholder="Your Name">
-                    <input  id="email" placeholder="Your Email">
-                </fieldset>
-                <fieldset>
-                    <input type="tel" id="tel" placeholder="Your Phone">
-                    <input type="text" id="subject" placeholder="Your Subject">
-                </fieldset>
-                <textarea placeholder="Message:"></textarea>
-                <input type="submit" class="submit-btn" value="submit Now">
-                <!-- <div onclick="validateForm()">Submit now</div> -->
-                <!-- <input onclick="submit()" type="submit" class="submit-btn" value="submit Now"> -->
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <h4 class="footer-title">Our Office</h4>
-                <p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M7 0C3.13 0 0 2.191 0 4.9C0 8.575 7 14 7 14C7 14 14 8.575 14 4.9C14 2.191 10.87 0 7 0ZM7 6.65C5.62 6.65 4.5 5.866 4.5 4.9C4.5 3.934 5.62 3.15 7 3.15C8.38 3.15 9.5 3.934 9.5 4.9C9.5 5.866 8.38 6.65 7 6.65Z" fill="#355EFC"/>
-                  </svg>
-                  <span>123 Street, New York, USA</span></p>
-                <p> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                    <path d="M14.1007 9.8929L11.0382 8.58037C10.9074 8.52462 10.762 8.51287 10.6239 8.5469C10.4858 8.58092 10.3625 8.65889 10.2726 8.76905L8.91628 10.4261C6.78773 9.42252 5.07474 7.70953 4.07116 5.58098L5.72822 4.22471C5.8386 4.13493 5.91673 4.01164 5.95077 3.87349C5.98481 3.73534 5.97292 3.58986 5.91689 3.45907L4.60437 0.396517C4.54287 0.255532 4.43411 0.140423 4.29684 0.0710381C4.15957 0.001653 4.00239 -0.017659 3.8524 0.016432L1.0086 0.672694C0.863998 0.706086 0.734981 0.787506 0.64261 0.903666C0.550238 1.01983 0.499967 1.16387 0.5 1.31228C0.5 8.32607 6.18486 14 13.1877 14C13.3362 14.0001 13.4803 13.9499 13.5965 13.8575C13.7127 13.7651 13.7942 13.636 13.8276 13.4914L14.4838 10.6476C14.5177 10.4969 14.498 10.3391 14.4281 10.2013C14.3581 10.0636 14.2424 9.95451 14.1007 9.8929Z" fill="#355EFC"/>
-                  </svg>
-                  <span>+012 345 6789</span></p>
-                <p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="19" viewBox="0 0 14 19" fill="none">
-                    <path d="M11.6667 3.16687H2.33335C1.69169 3.16687 1.17252 3.87937 1.17252 4.7502L1.16669 14.2502C1.16669 15.121 1.69169 15.8335 2.33335 15.8335H11.6667C12.3084 15.8335 12.8334 15.121 12.8334 14.2502V4.7502C12.8334 3.87937 12.3084 3.16687 11.6667 3.16687ZM11.4334 6.53145L7.30919 10.0306C7.12252 10.189 6.87752 10.189 6.69085 10.0306L2.56669 6.53145C2.42085 6.40479 2.33335 6.19104 2.33335 5.96145C2.33335 5.43104 2.75919 5.11437 3.09169 5.39145L7.00002 8.70854L10.9084 5.39145C11.2409 5.11437 11.6667 5.43104 11.6667 5.96145C11.6667 6.19104 11.5792 6.40479 11.4334 6.53145Z" fill="#355EFC"/>
-                  </svg>
-                  <span>info@example.com</span></p>
-                  <div class="social-icons-footer">
-                    <div>
-                        <img src="images/footer-icon1.svg">
-                    </div>
-                    <div>
-                        <img src="images/footer-icon2.svg">
-                    </div>
-                    <div>
-                        <img src="images/footer-icon3.svg">
-                    </div>
-                    <div>
-                        <img src="images/icon4.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="links">
-                <h4 class="footer-title">Services </h4>
-                <p>Financial Planning</p>
-                <p>Cash Investment</p>
-                <p>Financial Consultancy</p>
-                <p>Business Loans</p>
-                <p>Business Analysis</p>
-            </div>
-            <div class="links">
-                <h4 class="footer-title">Quick Links</h4>
-                <p>About Us</p>
-                <p>Contact Us</p>
-                <p>Our services</p>
-                <p>Terms & Condition</p>
-                <p>Support</p>
-            </div>
-            <div>
-                <h4 class="footer-title">Newsletter</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <form class="footer-form">
-                    <input type="email" placeholder="Your Email">
-                    <button>signUp</button>
-                </form>
-            </div>
-        </footer>
-        <section class="site-info">
-            <p>© Your Site Name, All Right Reserved.</p>
-            <p>Redesigned By saikat mondal  and Designed By HTML Codex</p>
-        </section>
-        <script src="./js/validation.js"></script>
-    
-
-        <div id="modal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span onclick="closeModal()" class="close">&times;</span>
-              <p id="in_text"></p>
-            </div>
-          
-          </div> 
-          <script src="./js/modal.js"></script>
-
-          <div id="mySidenav" class="sidenav">
-                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                          <a href="#">Home</a>
-                          <a href="#about">About Us</a>
-                          <a href="#serv">Services</a>
-                          <a href="#git">Contact</a>
           </div>
-          <script src="./js/mobile_menu.js"></script>
+          <a>
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <div>
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/icon1.svg" /></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/icon2.svg" /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="images/icon3.svg" /></a>
+        </div>
+      </div>
+      <div onclick="openNav()" class="burger-menu">
+        <div class="planing-image"></div>
+      </div>
+    </header>
+  </div>
+  <div class="wrapper">
+    <section class="slider">
+      <div class="hero-slider-left">
+        <button class="white-btn">Welcome to Finanza</button>
+        <h1>Your Financial Status Is Our Goal</h1>
+        <button onclick="openModal(0)" class="more">Explore more</button>
+      </div>
+      <div class="slider-img fade">
+        <img src="images/business-meeting-2.png" />
+      </div>
+      <div class="slider-img fade">
+        <img src="images/business-meeting-3.png" />
+      </div>
 
+      <div class="slider-img fade">
+        <img src="images/slider-image-card.svg" />
+      </div>
+      <div class="slider-arrow-left" onclick="plusSlides(-1)">
+        <img src="images/slider-button-left.svg" />
+      </div>
+      <div class="slider-arrow-right" onclick="plusSlides(1)">
+        <img src="images/slider-button-right.svg" />
+      </div>
+      <script src="./js/slider.js"></script>
+      <script src="./js/mobile_menu.js"></script>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-img">
+        <img src="images/image card.svg" />
+      </div>
+      <div class="about-component">
+        <div class="about-text-box">
+          <button class="white-btn">About us</button>
+          <h2>We Help Our Clients To Grow Their Business</h2>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+        </div>
+        <div class="about-tab-box">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab('btn1','tab1')" id="btn1">
+              Story
+            </button>
+            <button class="tablinks" onclick="openTab('btn2','tab2')" id="btn2">
+              Mission
+            </button>
+            <button class="tablinks" onclick="openTab('btn3','tab3')" id="btn3">
+              Vission
+            </button>
+          </div>
 
+          <div id="tab1" class="tabcontent">
+            <p>
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
+              tempor sit.Aliqu diam amet diam et eos labore. Diam dolor diam
+              ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita
+              erat ipsum et lorem et sit
+            </p>
+          </div>
+
+          <div id="tab2" class="tabcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, ex vitae, commodi, quo nostrum beatae magnam ipsam
+              expedita quibusdam reprehenderit aliquid adipisci eos accusamus
+              praesentium nam iusto at porro molestiae.
+            </p>
+          </div>
+
+          <div id="tab3" class="tabcontent">
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum ac tortor eget
+              nisl volutpat fringilla. Etiam eleifend rhoncus posuere.
+              Praesent vitae est neque. Aenean consectetur libero vitae
+              accumsan varius.
+            </p>
+          </div>
+        </div>
+        <script src="./js/tabs.js"></script>
+      </div>
+    </section>
+    <section class="services-short">
+      <div>
+        <div class="services-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="24" fill="#355EFC" />
+            <path
+              d="M35.5242 12.552C34.8126 11.8403 33.6631 11.8403 32.9515 12.552L24.029 21.4562L15.1065 12.5337C14.3948 11.8221 13.2453 11.8221 12.5337 12.5337C11.8221 13.2453 11.8221 14.3948 12.5337 15.1065L21.4562 24.029L12.5337 32.9515C11.8221 33.6631 11.8221 34.8126 12.5337 35.5242C13.2453 36.2358 14.3948 36.2358 15.1065 35.5242L24.029 26.6017L32.9515 35.5242C33.6631 36.2358 34.8126 36.2358 35.5242 35.5242C36.2358 34.8126 36.2358 33.6631 35.5242 32.9515L26.6017 24.029L35.5242 15.1065C36.2176 14.4131 36.2176 13.2453 35.5242 12.552Z"
+              fill="#F5F5F5" />
+          </svg>
+        </div>
+        <div class="services-text">
+          <p class="service-heading">No Hidden Cost</p>
+          <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+        </div>
+      </div>
+      <div>
+        <div class="services-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+            <circle cx="24.5" cy="24" r="24" fill="#355EFC" />
+            <path
+              d="M29.5043 22.2857C31.7181 22.2857 33.4919 19.9886 33.4919 17.1429C33.4919 14.2971 31.7181 12 29.5043 12C27.2905 12 25.5035 14.2971 25.5035 17.1429C25.5035 19.9886 27.2905 22.2857 29.5043 22.2857ZM18.8354 22.2857C21.0492 22.2857 22.8229 19.9886 22.8229 17.1429C22.8229 14.2971 21.0492 12 18.8354 12C16.6215 12 14.8345 14.2971 14.8345 17.1429C14.8345 19.9886 16.6215 22.2857 18.8354 22.2857ZM18.8354 25.7143C15.728 25.7143 9.5 27.72 9.5 31.7143V34.2857C9.5 35.2286 10.1001 36 10.8336 36H26.8371C27.5706 36 28.1707 35.2286 28.1707 34.2857V31.7143C28.1707 27.72 21.9427 25.7143 18.8354 25.7143ZM29.5043 25.7143C29.1176 25.7143 28.6775 25.7486 28.2107 25.8C28.2374 25.8171 28.2507 25.8514 28.2641 25.8686C29.7844 27.2914 30.838 29.1943 30.838 31.7143V34.2857C30.838 34.8857 30.7446 35.4686 30.5979 36H37.5061C38.2396 36 38.8397 35.2286 38.8397 34.2857V31.7143C38.8397 27.72 32.6117 25.7143 29.5043 25.7143Z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="services-text">
+          <p class="service-heading">Dedicated Team</p>
+          <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+        </div>
+      </div>
+      <div>
+        <div class="services-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+            <circle cx="24.5" cy="24" r="24" fill="#355EFC" />
+            <path
+              d="M34.1485 28.3664L30.755 27.9789C29.94 27.8854 29.1384 28.166 28.5639 28.7404L26.1056 31.1987C22.3247 29.2749 19.2251 26.1886 17.3012 22.3943L19.7729 19.9227C20.3474 19.3482 20.6279 18.5465 20.5344 17.7316L20.147 14.3648C19.9866 13.0154 18.851 12 17.4883 12H15.177C13.6672 12 12.4114 13.2559 12.5049 14.7656C13.213 26.1753 22.338 35.287 33.7343 35.9951C35.244 36.0886 36.4999 34.8327 36.4999 33.323V31.0117C36.5132 29.6623 35.4979 28.5267 34.1485 28.3664Z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="services-text">
+          <p class="service-heading">24/7 Available</p>
+          <p>Clita erat ipsum lorem sit sed stet duo justo</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="overview">
+    <div class="wrapper overview-wrapper">
+      <div>
+        <img src="images/clients-icon.svg" />
+        <p class="quantity">1234</p>
+        <p>Happy Clients</p>
+        <div class="line"></div>
+      </div>
+      <div>
+        <img src="images/tick-icon.svg" />
+        <p class="quantity">1234</p>
+        <p>Projects Completed</p>
+        <div class="line"></div>
+      </div>
+      <div>
+        <img src="images/staff1.svg" />
+        <p class="quantity">1234</p>
+        <p>Dedicated Staff</p>
+        <div class="line"></div>
+      </div>
+      <div>
+        <img src="images/staff2.svg" />
+        <p class="quantity">1234</p>
+        <p>Dedicated Staff</p>
+        <div class="line"></div>
+      </div>
+    </div>
+  </section>
+  <div class="wrapper">
+    <section id="why" class="why-us">
+      <div class="why-us-left-box">
+        <button>Why Choosing Us!</button>
+        <h2>Few Reasons Why People Choosing Us!</h2>
+        <p>
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+          lorem sit clita duo justo magna dolore erat amet
+        </p>
+        <button onclick="openModal(1)" class="more">explore more</button>
+      </div>
+      <div class="why-us-right-box">
+        <div onmouseover="onmouseOver(0)" onmouseleave="onmouseLeave(0)">
+          <img class="tick-img" src="./images/blue-tick.svg" />
+          <p class="title">Fast Executions</p>
+          <p>
+            Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
+            justo erat amet
+          </p>
+          <button class="arrow-img">
+            Read more
+            <img class="arrow-back" src="./images/icon_arrow_back_blue.svg" />
+          </button>
+        </div>
+        <div onmouseover="onmouseOver(1)" onmouseleave="onmouseLeave(1)">
+          <img class="tick-img" src="./images/blue-tick.svg" />
+          <p class="title">Fast Executions</p>
+          <p>
+            Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
+            justo erat amet
+          </p>
+          <button class="arrow-img">
+            Read more
+            <img class="arrow-back" src="./images/icon_arrow_back_blue.svg" />
+          </button>
+        </div>
+        <div onmouseover="onmouseOver(2)" onmouseleave="onmouseLeave(2)">
+          <img class="tick-img" src="./images/blue-tick.svg" />
+          <p class="title">Fast Executions</p>
+          <p>
+            Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
+            justo erat amet
+          </p>
+          <button class="arrow-img">
+            Read more
+            <img class="arrow-back" src="./images/icon_arrow_back_blue.svg" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="serv" class="services">
+      <button class="white-btn">Our Services</button>
+      <h2>Awesome Financial Services For Business</h2>
+      <div class="all-services">
+        <div class="services-tab">
+          <div>
+            <div class="planing-image"></div>
+            <h5>Financial Planing</h5>
+          </div>
+          <div>
+            <div class="planing-image"></div>
+            <h5>Financial Planing</h5>
+          </div>
+          <div>
+            <div class="planing-image"></div>
+            <h5>Financial Planing</h5>
+          </div>
+          <div>
+            <div class="planing-image"></div>
+            <h5>Financial Planing</h5>
+          </div>
+        </div>
+        <div class="services-img">
+          <img src="images/tab-image.svg" />
+        </div>
+        <div class="tab-right">
+          <h3>25 Years Of Experience In Financial Support</h3>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+          </p>
+          <ul class="tab-right-ul">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
+                <path
+                  d="M8.4911 18.2766L0.366101 10.1516C-0.122034 9.66351 -0.122034 8.87206 0.366101 8.38387L2.13383 6.6161C2.62196 6.12792 3.41346 6.12792 3.9016 6.6161L9.37499 12.0894L21.0984 0.366101C21.5865 -0.122034 22.378 -0.122034 22.8662 0.366101L24.6339 2.13387C25.122 2.62201 25.122 3.41346 24.6339 3.90165L10.2589 18.2767C9.77069 18.7648 8.97924 18.7648 8.4911 18.2766Z"
+                  fill="#355EFC" />
+              </svg><span> Secured Loans</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
+                <path
+                  d="M8.4911 18.2766L0.366101 10.1516C-0.122034 9.66351 -0.122034 8.87206 0.366101 8.38387L2.13383 6.6161C2.62196 6.12792 3.41346 6.12792 3.9016 6.6161L9.37499 12.0894L21.0984 0.366101C21.5865 -0.122034 22.378 -0.122034 22.8662 0.366101L24.6339 2.13387C25.122 2.62201 25.122 3.41346 24.6339 3.90165L10.2589 18.2767C9.77069 18.7648 8.97924 18.7648 8.4911 18.2766Z"
+                  fill="#355EFC" />
+              </svg><span> Credit Facilities</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
+                <path
+                  d="M8.4911 18.2766L0.366101 10.1516C-0.122034 9.66351 -0.122034 8.87206 0.366101 8.38387L2.13383 6.6161C2.62196 6.12792 3.41346 6.12792 3.9016 6.6161L9.37499 12.0894L21.0984 0.366101C21.5865 -0.122034 22.378 -0.122034 22.8662 0.366101L24.6339 2.13387C25.122 2.62201 25.122 3.41346 24.6339 3.90165L10.2589 18.2767C9.77069 18.7648 8.97924 18.7648 8.4911 18.2766Z"
+                  fill="#355EFC" />
+              </svg><span> Cash Advanced</span>
+            </li>
+          </ul>
+          <button onclick="openModal(2)" class="more">Read More</button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/hover.js"></script>
+  </div>
+  <section id="git" class="contact-form">
+    <div class="background"></div>
+    <div class="form-container">
+      <button class="white-btn">Get in Touch</button>
+      <h2>Request A Call-Back</h2>
+      <form name="call-back" onsubmit="return validateForm()">
+        <fieldset>
+          <input type="text" autocomplete="off" id="fname" placeholder="Your Name" />
+          <input id="email" autocomplete="off" placeholder="Your Email" />
+        </fieldset>
+        <fieldset>
+          <input type="tel" autocomplete="off" id="tel" placeholder="Your Phone" />
+          <input type="text" autocomplete="off" id="subject" placeholder="Your Subject" />
+        </fieldset>
+        <textarea id="message" autocomplete="off" placeholder="Message:"></textarea>
+        <input type="submit" class="submit-btn" value="submit Now" />
+
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <h4 class="footer-title">Our Office</h4>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path
+            d="M7 0C3.13 0 0 2.191 0 4.9C0 8.575 7 14 7 14C7 14 14 8.575 14 4.9C14 2.191 10.87 0 7 0ZM7 6.65C5.62 6.65 4.5 5.866 4.5 4.9C4.5 3.934 5.62 3.15 7 3.15C8.38 3.15 9.5 3.934 9.5 4.9C9.5 5.866 8.38 6.65 7 6.65Z"
+            fill="#355EFC" />
+        </svg>
+        <span>123 Street, New York, USA</span>
+      </p>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+          <path
+            d="M14.1007 9.8929L11.0382 8.58037C10.9074 8.52462 10.762 8.51287 10.6239 8.5469C10.4858 8.58092 10.3625 8.65889 10.2726 8.76905L8.91628 10.4261C6.78773 9.42252 5.07474 7.70953 4.07116 5.58098L5.72822 4.22471C5.8386 4.13493 5.91673 4.01164 5.95077 3.87349C5.98481 3.73534 5.97292 3.58986 5.91689 3.45907L4.60437 0.396517C4.54287 0.255532 4.43411 0.140423 4.29684 0.0710381C4.15957 0.001653 4.00239 -0.017659 3.8524 0.016432L1.0086 0.672694C0.863998 0.706086 0.734981 0.787506 0.64261 0.903666C0.550238 1.01983 0.499967 1.16387 0.5 1.31228C0.5 8.32607 6.18486 14 13.1877 14C13.3362 14.0001 13.4803 13.9499 13.5965 13.8575C13.7127 13.7651 13.7942 13.636 13.8276 13.4914L14.4838 10.6476C14.5177 10.4969 14.498 10.3391 14.4281 10.2013C14.3581 10.0636 14.2424 9.95451 14.1007 9.8929Z"
+            fill="#355EFC" />
+        </svg>
+        <span>+012 345 6789</span>
+      </p>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="19" viewBox="0 0 14 19" fill="none">
+          <path
+            d="M11.6667 3.16687H2.33335C1.69169 3.16687 1.17252 3.87937 1.17252 4.7502L1.16669 14.2502C1.16669 15.121 1.69169 15.8335 2.33335 15.8335H11.6667C12.3084 15.8335 12.8334 15.121 12.8334 14.2502V4.7502C12.8334 3.87937 12.3084 3.16687 11.6667 3.16687ZM11.4334 6.53145L7.30919 10.0306C7.12252 10.189 6.87752 10.189 6.69085 10.0306L2.56669 6.53145C2.42085 6.40479 2.33335 6.19104 2.33335 5.96145C2.33335 5.43104 2.75919 5.11437 3.09169 5.39145L7.00002 8.70854L10.9084 5.39145C11.2409 5.11437 11.6667 5.43104 11.6667 5.96145C11.6667 6.19104 11.5792 6.40479 11.4334 6.53145Z"
+            fill="#355EFC" />
+        </svg>
+        <span>info@example.com</span>
+      </p>
+      <div class="social-icons-footer">
+        <div>
+          <img src="images/footer-icon1.svg" />
+        </div>
+        <div>
+          <img src="images/footer-icon2.svg" />
+        </div>
+        <div>
+          <img src="images/footer-icon3.svg" />
+        </div>
+        <div>
+          <img src="images/icon4.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <h4 class="footer-title">Services</h4>
+      <p>Financial Planning</p>
+      <p>Cash Investment</p>
+      <p>Financial Consultancy</p>
+      <p>Business Loans</p>
+      <p>Business Analysis</p>
+    </div>
+    <div class="links">
+      <h4 class="footer-title">Quick Links</h4>
+      <p>About Us</p>
+      <p>Contact Us</p>
+      <p>Our services</p>
+      <p>Terms & Condition</p>
+      <p>Support</p>
+    </div>
+    <div>
+      <h4 class="footer-title">Newsletter</h4>
+      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+      <form class="footer-form">
+        <input id="footer-email" type="email" placeholder="Your Email" />
+        <button>signUp</button>
+      </form>
+    </div>
+  </footer>
+  <section class="site-info">
+    <p>© Your Site Name, All Right Reserved.</p>
+    <p>Redesigned By saikat mondal and Designed By HTML Codex</p>
+  </section>
+  <script src="./js/validation.js"></script>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <p id="in_text"></p>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#serv">Services</a>
+    <a href="#git">Contact</a>
+  </div>
+  <script src="./js/mobile_menu.js"></script>
 </body>
+
 </html>

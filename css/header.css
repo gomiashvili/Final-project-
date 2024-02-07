@@ -112,18 +112,21 @@ header {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #6060fb;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   z-index: 999 !important;
 }
-
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }

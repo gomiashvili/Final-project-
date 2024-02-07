@@ -158,6 +158,16 @@ img {
     padding-top: 50px;
   }
 }
+@media only screen and (max-width: 365px) {
+  .hero-slider-left .more {
+    margin-top: 133px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .hero-slider-left .more {
+    margin-top: 95px;
+  }
+}
 @media only screen and (max-width: 300px) {
   .prev,
   .next,
