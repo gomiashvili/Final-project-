@@ -15,6 +15,10 @@
 .hero-slider-left {
   width: 60%;
 }
+.hero-slider-left > .white-btn {
+  position: relative;
+  z-index: 50 !important;
+}
 .slider-arrow-left {
   position: absolute;
   left: -75px;
