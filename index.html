@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="css/services-section.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/animations.css">
-
-    
 </head>
 <body>
     <div class="wrapper header-wrapper">
@@ -49,13 +47,13 @@
         </section>
     </div>
       <div class="hr"></div>
-      <div class="wrapper">
+      <div class="wrapper full-width-wrapper">
         <header>
             <div class="header-logo">
                 <img src="images/Finanza.svg">
             </div>
         
-            <nav>
+            <nav >
                 <ul class="header-menu">
                     <a><li>Home</li></a>
                     <a><li>About</li></a>
@@ -87,11 +85,13 @@
                     <a href="https://www.linkedin.com/" target="_blank"><img src="images/icon3.svg"></a>
                 </div>
             </div>
-            <div class="burger-menu">
+            <div onclick="openNav()" class="burger-menu">
                 <div class="planing-image">
                 </div>
             </div>
         </header>
+    </div>
+    <div class="wrapper">
         <section class="slider">
             <div class="hero-slider-left">
                 <button class="white-btn">Welcome to Finanza</button>
@@ -124,6 +124,7 @@
                 </div>
             </div> -->
             <script src="./js/slider.js"></script>
+            <script src = "./js/mobile_menu.js"></script>
 
         </section>
         <section id="about" class="about-section">
@@ -415,6 +416,16 @@
           
           </div> 
           <script src="./js/modal.js"></script>
+
+          <div id="mySidenav" class="sidenav">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <a href="#">Home</a>
+                          <a href="#about">About Us</a>
+                          <a href="#serv">Services</a>
+                          <a href="#git">Contact</a>
+          </div>
+          <script src="./js/mobile_menu.js"></script>
+
 
 </body>
 </html>
