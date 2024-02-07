@@ -43,5 +43,25 @@
 @media screen and (max-width: 1100px) {
   .about-section {
     justify-content: center;
+    margin-top: 2%;
+  }
+  .about-section img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .about-section {
+    margin-top: 160px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .about-section {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-component {
+    width: 100%;
   }
 }

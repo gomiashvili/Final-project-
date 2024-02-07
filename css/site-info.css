@@ -9,3 +9,8 @@
 .site-info p {
   color: white;
 }
+@media screen and (max-width: 950px) {
+  .site-info {
+    flex-direction: column;
+  }
+}

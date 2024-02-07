@@ -113,6 +113,46 @@ img {
 .dot:hover {
   background-color: #717171;
 }
+@media only screen and (max-width: 1405px) {
+  .slider-arrow-left {
+    left: 0px;
+    top: 135px;
+  }
+  .slider-arrow-right {
+    right: 0px;
+    top: 135px;
+  }
+}
+@media only screen and (max-width: 1215px) {
+  .slider-arrow-left {
+    top: 160px;
+  }
+  .slider-arrow-right {
+    top: 160px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .slider h1 {
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 3 !important;
+    line-height: 42px;
+  }
+  .hero-slider-left {
+    width: 100%;
+  }
+  .slider-img {
+    position: absolute;
+    right: 0px;
+    top: 51px;
+    z-index: 1;
+    display: none;
+  }
+  .slider-img img {
+    height: 300px;
+  }
+}
 
 @media only screen and (max-width: 300px) {
   .prev,

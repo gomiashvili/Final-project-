@@ -56,3 +56,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   opacity: 0.8;
 }
+
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    justify-self: center;
+    line-height: 34px;
+    margin-top: 9px;
+  }
+}

@@ -79,8 +79,20 @@
   width: 140px;
 }
 
-/* @media screen and (max-width: 1077px) {
-  .all-services {
-    flex-direction: column ;
+@media screen and (max-width: 1077px) {
+  .services {
+    margin-top: 20px;
   }
-} */
+  .all-services {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .services-tab > div {
+    width: 100%;
+  }
+  .tab-right button {
+    margin-top: 10px;
+  }
+}

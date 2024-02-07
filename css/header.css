@@ -1,3 +1,6 @@
+.burger-menu {
+  display: none;
+}
 header {
   display: flex;
   width: 100%;
@@ -69,8 +72,15 @@ header {
   }
 }
 @media screen and (max-width: 735px) {
+  .social-icons {
+    display: none;
+  }
   header nav {
     display: none;
+  }
+  .burger-menu {
+    display: block;
+    margin-right: 6px;
   }
   .info-header,
   .hr {
@@ -78,6 +88,7 @@ header {
   }
   .header-wrapper {
     margin: 0px;
+    display: none !important;
   }
   header {
     margin-top: -18px;

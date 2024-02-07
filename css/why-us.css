@@ -89,6 +89,26 @@
 @media screen and (max-width: 1100px) {
   .why-us-right-box {
     height: 950px;
-    width: 24%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .why-us button:first-of-type {
+    display: block;
+    margin: auto;
+  }
+  .why-us {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .why-us-left-box {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .why-us-right-box {
+    margin: auto;
+    width: auto;
   }
 }

@@ -66,3 +66,31 @@ footer p {
   display: flex;
   gap: 15px;
 }
+@media screen and (max-width: 750px) {
+  .social-icons-footer {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer div {
+    margin: auto;
+    width: 90%;
+  }
+  .footer-form button {
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    padding: 5px 5px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 47px;
+    background-color: #355efc;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
